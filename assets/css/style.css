@@ -436,7 +436,7 @@ section {
     }
 }
 
-.about {
+.count {
     transform: skewY(-2deg);
     justify-content: center;
     background: url("../img/fotos/vic-bg-new-temp.png") top center;
@@ -445,23 +445,23 @@ section {
     box-shadow: 0 50px 80px rgba(0, 0, 0, 0.1);
 }
 
-.about .container {
+.count .container {
     position: relative;
     z-index: 10;
 }
 
-.about .icon-boxes .icon-box {
+.count .icon-boxes .icon-box {
     margin-top: 30px;
 }
 
-.about .icon-boxes .icon-box i {
+.count .icon-boxes .icon-box i {
     font-size: 40px;
     color: #ffd484;
     margin-bottom: 10px;
     line-height: 10px;
 }
 
-.about .icon-boxes .icon-box h4 {
+.count .icon-boxes .icon-box h4 {
     font-size: 34px;
     font-weight: 700;
     margin-top: 14px;
@@ -474,14 +474,14 @@ section {
     line-height: 30px;
 }
 
-.about .icon-boxes .icon-box p {
+.count .icon-boxes .icon-box p {
     font-size: 28px;
     font-weight: 600;
     color: whitesmoke;
     font-family: Montserrat, sans-serif;
 }
 
-.about .icon-boxes span {
+.count .icon-boxes span {
     font-weight: 700;
     font-family: Montserrat, sans-serif;
     background-color: #FFA8A8;
@@ -490,13 +490,13 @@ section {
 }
 
 @media (max-width: 1200px) {
-    .about .content {
+    .count .content {
         padding-right: 0;
     }
 }
 
 @media (max-width: 768px) {
-    .about {
+    .count {
         text-align: center;
     }
 }
