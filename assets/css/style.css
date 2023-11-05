@@ -1,28 +1,18 @@
+
 body {
     font-family: "Open Sans", sans-serif;
     background: #1d1027;
     color: #fff;
+    user-select: none;
 }
 
 a {
-    color: #cda45e;
     text-decoration: none;
 }
 
 a:hover {
-    color: #d9ba85;
     text-decoration: none;
 }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Playfair Display", serif;
-}
-
 section {
     padding: 60px 0;
     overflow: hidden;
@@ -37,7 +27,7 @@ section {
 
     transition: all 0.5s;
     z-index: 997;
-    top: 40px;
+    top: 15px;
 
 }
 
@@ -52,7 +42,7 @@ section {
     z-index: 997;
     padding: 10px 0;
     list-style: none;
-    top: 40px;
+    top: 15px;
 }
 
 .discord {
@@ -114,19 +104,20 @@ section {
     align-items: center;
     justify-content: space-between;
     padding: 5px 20px 5px 20px;
-    color: #fff;
+    color: whitesmoke;
     white-space: nowrap;
     font-size: 20px;
     font-weight: 800;
+    font-family: Montserrat, sans-serif;
     transition: 0.4s;
 }
 
 .navbar .store {
     position: relative;
-    background: linear-gradient(109.6deg, rgb(255, 227, 99) 11.2%, rgb(255, 224, 98) 100.2%);
-    backdrop-filter: blur(50px);
+    background-color: #ffd754;
     text-align: center;
     border-radius: 14px;
+    font-family: Montserrat, sans-serif;
     font-size: 22px;
 
 
@@ -150,10 +141,11 @@ section {
     font-size: 18px;
     line-height: 0;
     margin-left: 5px;
+    font-family: Montserrat, sans-serif;
 }
 
 .navbar a:hover {
-    border-radius: 100px;
+    border-radius: 30px;
     transform: scale(0.9);
     transition: all ease-in-out 0.4s;
 }
@@ -249,8 +241,65 @@ section {
     right: 0;
 }
 
-#hero .letras img {
-    width: 600px;
+#hero .container {
+    position: absolute;
+    animation: up-down 1s ease-in-out infinite alternate-reverse both;
+
+}
+
+#hero .home-title {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+#hero .content .more-button {
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: 12px 24px;
+    transition: 0.3s;
+    margin-top: 30px;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+}
+#hero span{
+    padding-top: 40px;
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: 1px;
+    font-family: Montserrat, sans-serif;
+    margin-bottom: 0;
+    background-color: #FFA8A8;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s;
+}
+
+#hero .content .more-button i {
+    font-size: 26px;
+    background-color: #FFA8A8;
+    -webkit-background-clip: text;
+    transition: 0.3s;
+    -webkit-text-fill-color: transparent;
+    margin-left: 5px;
+    line-height: 0;
+}
+
+#hero .content .more-button:hover {
+    transform: scale(0.9);
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(-5px);
+    }
 }
 
 @media (min-width: 1366px) {
@@ -270,29 +319,42 @@ section {
     }
 }
 
-.shop .tienda-title {
-    width: 250px;
-    padding-bottom: 20px;
+#shop {
+    padding-top: 170px;
 }
 
-.shop p {
-    font-size: 20px;
-    font-weight: 800;
-    margin-top: 15px;
+.shop .tienda-title {
+    width: 400px;
+    padding-bottom: 20px;
+}
+.shop .content .text{
+    font-size: 22px;
+    font-weight: 600;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Montserrat, sans-serif;
+}
+.shop .content .text span{
+    background-color: #FFA8A8;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .shop .content .read-more {
-    background-color: green;
-    color: black;
-    font-weight: 500;
+    background-color: #ffd754;
+    font-family: Montserrat, sans-serif;
+    color: white;
+    font-weight: 700;
     font-size: 16px;
     letter-spacing: 1px;
-    padding: 12px 24px;
-    border-radius: 5px;
+    padding: 10px 180px;
+    margin-top: 10px;
+    border-radius: 14px;
     transition: 0.3s;
     display: inline-flex;
     align-items: center;
     justify-content: center;
+
 }
 
 .shop .content .read-more i {
@@ -303,36 +365,32 @@ section {
 }
 
 .shop .content .read-more:hover {
-    background-color: blue;
-    padding-right: 19px;
+    background-color: #ffac3f;
+
 }
 
 .shop .content .read-more:hover i {
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .shop .icon-box {
     padding: 50px 40px;
     margin-bottom: 20px;
-    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 50px 80px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     transition: all 0.3s ease-out 0s;
-    background-color: #d63384;
+    background-color: rgba(0, 0, 0, 0.27);
     text-align: center;
+    font-family: Montserrat, sans-serif;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.304);
 }
-
-.shop .icon-box i {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 24px;
-    font-size: 32px;
-    line-height: 0;
-    transition: all 0.4s ease-out 0s;
-    background-color: red;
+.shop .icon-box img{
+    transition: 0.3s;
+}
+.shop .icon-box img:hover{
+    rotate: -10deg;
+    transition: all ease-in-out 0.2s;
 }
 
 .shop .icon-box h3 {
@@ -343,6 +401,15 @@ section {
 
 .shop .icon-box p {
     margin-bottom: 0;
+    background: #D3CCE3;
+    background: -webkit-linear-gradient(to right, #E9E4F0, #D3CCE3);
+    background: linear-gradient(to right, #E9E4F0, #D3CCE3);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 800;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: Montserrat, sans-serif;
 }
 
 .shop .icon-box:hover i {
@@ -352,7 +419,7 @@ section {
 
 .shop .icon-boxes .col-md-6:nth-child(2) .icon-box,
 .shop .icon-boxes .col-md-6:nth-child(4) .icon-box {
-    margin-top: -40px;
+    margin-top: 20px;
 }
 
 @media (max-width: 768px) {
@@ -362,7 +429,9 @@ section {
         margin-top: 0;
     }
 }
-
+.modalities{
+    padding-top: 180px;
+}
 .modalities img {
     width: 600px;
     padding-bottom: 40px;
@@ -436,7 +505,7 @@ section {
         top: 40px;
     }
 
-    #hero .letras img {
+    #hero img {
         width: 330px;
     }
 
