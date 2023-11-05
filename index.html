@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>VicNix Network</title>
+    <title>VICNIX NETWORK</title>
     <meta name="description"
           content="Entra a divertirte juntos a tus amigos en nuestra gran variedad de modos de juegos y consigue beneficios únicos.">
     <meta property="og:url" content="https://mooncodingcore.github.io/vicnixweb/">
@@ -51,12 +51,13 @@
         <div class="row justify-content-center">
             <div class="col-xl-12 content">
                 <a><img class="home-title" src="assets/img/fotos/minecraft_title_2.png"></a>
-                <a href="#shop" class="more-button scrollto"><span>ECHA UN VISTAZO</span><br> <i class="bi bi-arrow-down-circle-fill"></i></a>
+                <a href="#shop" class="more-button scrollto"><span>ECHA UN VISTAZO</span><br> <i class="bi bi-arrow-down-short"></i></a>
             </div>
         </div>
     </div>
 </section>
 <main id="main">
+
     <section id="shop" class="shop">
         <div class="container" data-aos="fade-up" data-aos-delay="100">
             <div class="row align-items-xl-center gy-5">
@@ -98,6 +99,28 @@
             </div>
         </div>
     </section>
+    <section id="about" class="about">
+        <div class="container" data-aos="fade-up">
+
+            <div class="row no-gutters justify-content-center">
+                <div class="d-flex align-items-center justify-content-center">
+                    <div class="icon-boxes d-flex flex-column justify-content-center">
+                        <div class="row">
+                            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+                                <h4>Discord</h4>
+                                <p>Se encuentran <span id="discordNumero"></span><br><span>usuarios</span> en linea</p>
+                            </div>
+                            <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+                                <h4>Minecraft</h4>
+                                <p>Se encuentran <span data-playercounter-ip="hypixel.net" data-playercounter-format="{online}"></span> <span>usuarios</span> en linea</p>
+                            </div>
+                        </div>
+                    </div><!-- End .content-->
+                </div>
+            </div>
+
+        </div>
+    </section><!-- End About Section -->
     <section id="modalities" class="modalities">
         <div class="container">
             <a><img src="assets/img/fotos/title-modalidades.png"></a>
@@ -148,5 +171,8 @@
 <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
 <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
 <script src="assets/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="assets/js/discord-counts.js"></script>
 </body>
 </html>
