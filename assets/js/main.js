@@ -46,7 +46,7 @@
             top: elementPos - offset,
             behavior: 'smooth'
         })
-    }
+    } 
     let selectHeader = select('#header')
     let selectTopbar = select('#topbar')
     if (selectHeader) {
